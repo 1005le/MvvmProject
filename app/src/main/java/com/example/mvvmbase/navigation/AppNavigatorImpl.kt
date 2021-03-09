@@ -19,5 +19,9 @@ class AppNavigatorImpl @Inject constructor() : BaseNavigatorImpl(),
         openScreen(R.id.action_homeFragment_to_loginFragment, bundle)
     }
 
+    override fun openListUserToDetailScreen(bundle: Bundle?) {
+        openScreen(R.id.action_listUser_to_detailUserFragment, bundle)
+    }
+
 
 }

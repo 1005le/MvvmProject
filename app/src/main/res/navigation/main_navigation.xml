@@ -37,7 +37,20 @@
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.example.features.ui.user.ListUserFragment"
-        android:label="LoginFragment" />
+        android:label="ListUserFragment">
+        <action
+            android:id="@+id/action_listUser_to_detailUserFragment"
+            app:destination="@id/detailUserFragment"
+            app:enterAnim="@anim/slide_in_left"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailUserFragment"
+        android:name="com.example.features.ui.detail.DetailUserFragment"
+        android:label="DetailUserFragment" />
 
 
 </navigation>

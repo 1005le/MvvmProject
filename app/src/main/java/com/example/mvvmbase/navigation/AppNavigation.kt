@@ -9,4 +9,6 @@ interface AppNavigation : BaseNavigator {
 
     fun openSplashToLoginScreen(bundle: Bundle? = null)
 
+    fun openListUserToDetailScreen(bundle: Bundle? = null)
+
 }
